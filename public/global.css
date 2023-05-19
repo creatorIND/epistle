@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Gothic A1";
+	src: url("./fonts/GothicA1-Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Gothic A1";
+	src: url("./fonts/GothicA1-Medium.ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Gothic A1";
+	src: url("./fonts/GothicA1-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Merriweather Sans";
+	src: url("./fonts/MerriweatherSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("./fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 8px;
+	background-color: #cccccc;
+	border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #b9b9b9;
+}
