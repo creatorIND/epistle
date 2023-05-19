@@ -22,6 +22,8 @@ const createWindow = () => {
 		autoHideMenuBar: true,
 	});
 	mainWindow.maximize();
+	mainWindow.loadFile("loading.html");
+	setTimeout(() => mainWindow.loadFile("public/index.html"), 3000);
 	authProvider = new AuthProvider(msalConfig);
 };
 

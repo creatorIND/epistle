@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./public/global.css" />
+		<title>Epistle</title>
+	</head>
+	<body>
+		<main class="loading">
+			<div class="loading__logo">
+				<img src="./public/assets/logo.svg" alt="" />
+			</div>
+			<div class="loading__text">Epistle</div>
+			<div class="loading__loader"></div>
+		</main>
+	</body>
+	<style>
+		.loading {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.loading__logo img {
+			height: 100px;
+			width: auto;
+		}
+
+		.loading__text {
+			font-family: "Josefin Sans", sans-serif;
+			font-size: 30px;
+			animation: fadeIn 3s;
+		}
+
+		.loading__loader {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			display: inline-block;
+			border-top: 4px solid #02c39a;
+			border-right: 4px solid transparent;
+			box-sizing: border-box;
+			animation: rotation 3s linear infinite;
+		}
+		.loading__loader::after {
+			content: "";
+			box-sizing: border-box;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			border-left: 4px solid #424242;
+			border-bottom: 4px solid transparent;
+			animation: rotation 1.5s linear infinite reverse;
+		}
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+	</style>
+</html>
