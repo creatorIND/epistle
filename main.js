@@ -1,6 +1,10 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
+const AuthProvider = require("./outlook/AuthProvider");
+const { protectedResources, msalConfig } = require("./outlook/authConfig");
+const getGraphClient = require("./outlook/graph");
 
+let authProvider;
 const createWindow = () => {
 	const win = new BrowserWindow({
 		width: 800,
@@ -10,6 +14,7 @@ const createWindow = () => {
 		},
 	});
 	win.loadFile("index.html");
+	authProvider = new AuthProvider(msalConfig);
 };
 
 app.whenReady().then(() => {
