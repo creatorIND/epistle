@@ -3,6 +3,7 @@
 	import { Modal, Menu } from "@svelteuidev/core";
 	import { createEventDispatcher } from "svelte";
 	import Loader from "./Loader.svelte";
+	import Compose from "./Compose.svelte";
 
 	const dispatch = createEventDispatcher();
 
@@ -72,31 +73,7 @@
 		closeOnClickOutside={false}
 		closeOnEscape={false}
 	>
-		<div class="compose">
-			<h1>Compose Message</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Blanditiis veritatis minus possimus fugiat necessitatibus
-				voluptatibus vitae maiores optio dolores? Deleniti officia alias
-				accusantium explicabo voluptatum laudantium provident temporibus
-				ad officiis. Beatae, et officia cumque, saepe debitis sapiente
-				aliquam labore quam quasi repellat eos neque. Quo eveniet amet
-				pariatur et optio a repellendus odit officia temporibus
-				reprehenderit, necessitatibus, quos repellat illum. Cumque, eos
-				obcaecati adipisci atque aspernatur tempore illo quia iure
-				fugiat consequuntur molestiae, minus fugit vitae sunt enim
-				cupiditate itaque voluptate deleniti beatae! Dolorem quas et sit
-				laudantium aspernatur corrupti. Sit distinctio cupiditate autem
-				quam necessitatibus iusto deserunt id magni explicabo a.
-				Reiciendis nesciunt praesentium officiis aspernatur facilis
-				excepturi, placeat esse molestias recusandae neque sit quidem ex
-				natus, explicabo adipisci. Hic illum placeat dignissimos
-				explicabo officia, eum quae quas iure pariatur asperiores
-				eligendi? Nostrum mollitia perspiciatis ex reprehenderit saepe!
-				Illo aliquid et, perferendis magnam at neque deserunt dolor nemo
-				est!
-			</p>
-		</div>
+		<Compose />
 	</Modal>
 </div>
 
